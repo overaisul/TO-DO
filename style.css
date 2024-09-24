@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(173, 253, 253);
+}
+.container {
+  background-color: aliceblue;
+  max-width: 500px;
+  padding: 2rem;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.h1 {
+  text-align: center;
+}
+#inputTodo {
+  padding: 0.7rem;
+  border-radius: 5px;
+  width: 70%;
+}
+#inputButton {
+  padding: 0.7rem;
+  border-radius: 5px;
+  background-color: aqua;
+  cursor: pointer;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  padding: 1rem;
+  border-bottom: solid rgb(230, 213, 213) 2px;
+  text-decoration: none;
+}
+li:hover {
+  background-color: aquamarine;
+  border-radius: 5px;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+.filterButton,
+.editbtn,
+.deletebtn,
+.completebtn {
+  margin: 10px 10px 0px 0px;
+  padding: 10px;
+  background-color: yellow;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.editbtn {
+  background-color: aqua;
+}
+.deletebtn {
+  background-color: red;
+}
+.completebtn {
+  background-color: rgb(27, 205, 27);
+}
+.filterButton:hover {
+  background-color: aqua;
+}
+.todoItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.completed {
+  text-decoration: line-through;
+}
